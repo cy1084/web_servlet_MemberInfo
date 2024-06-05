@@ -10,6 +10,19 @@
 		var id = opener.document.getElementsByName("id");
 		document.getElementById("inputId").textContent = id.value;
 	}
+	function confirm() {
+		var id = opener.document.getElementsByName("id")[0];
+		id.title = "y";
+		id.disabled = "disabled";
+		self.close();
+	}
+	function cancel() {
+		var id = opener.document.getElementsByName("id")[0];
+		id.value = "";
+		id.focus();
+		id.title = "n";
+		self.close();
+	}
 </script>
 </head>
 <%
@@ -24,30 +37,23 @@ boolean isc = (Boolean) obj;
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<%=isc?"사용할 수 있습니당":"사용할 수 없습니당" %>
-			</td>
+			<td><%=isc ? "사용할 수 있습니당" : "사용할 수 없습니당"%></td>
 		</tr>
 		<tr>
 			<%
-				if(isc){
-					%>
-						<td>
-							<input type="button" value="사용하기" onclick="confirm()">
-						</td>
-					<% 
-				}else{
-					%>
-						<td>
-							<input type="button" value="창닫기" onclick="cancel()">
-						</td>
-					<% 
-					
-				}
+			if (isc) {
 			%>
-			<td>
-				
+			<td><input type="button" value="사용하기" onclick="confirm()">
 			</td>
+			<%
+			} else {
+			%>
+			<td><input type="button" value="창닫기" onclick="cancel()">
+			</td>
+			<%
+			}
+			%>
+			<td></td>
 		</tr>
 	</table>
 </body>

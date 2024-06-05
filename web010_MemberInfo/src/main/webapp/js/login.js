@@ -31,5 +31,16 @@ function idCheck() {
 		id.focus();
 		return;
 	}
-	window.open("/duplicateId.do?id="+id.value, "", "width=500pxm height=600px");
+	window.open("./duplicateId.do?id=" + id.value, "", "width=500pxm height=600px");
+}
+
+function emailCheck() {
+	var email = document.getElementsByName("email")[0].value;
+	var regEx = /^[a-zA-Z0-9\.\-]+@[a-zA-Z\-]+\.[A-Za-z]{2,3}$/;
+	
+	if(regEx.test(email)){
+		//alert("올바른 형식의 이메일입니다.");
+	}else{
+		alert("잘못된 형식의 이메일입니다.");
+	}
 }
