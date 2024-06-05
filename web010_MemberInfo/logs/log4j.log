@@ -1,0 +1,142 @@
+2024-06-04 16:44:47 DEBUG LogFactory:109 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2024-06-04 16:44:47 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-04 16:44:47 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-04 16:44:47 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-04 16:44:47 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-04 17:12:52 DEBUG LogFactory:109 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2024-06-04 17:12:52 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-04 17:12:52 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-04 17:12:52 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-04 17:12:52 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-04 17:12:52 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-04 17:12:52 DEBUG PooledDataSource:448 - Created connection 1924949331.
+2024-06-04 17:12:52 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@72bc6553]
+2024-06-04 17:12:52 DEBUG duplicateId:137 - ==>  Preparing: SELECT ID FROM MEMBERINFO m WHERE ID=?
+2024-06-04 17:12:52 DEBUG duplicateId:137 - ==> Parameters: HAPPY(String)
+2024-06-04 17:12:52 TRACE duplicateId:143 - <==    Columns: ID
+2024-06-04 17:12:52 TRACE duplicateId:143 - <==        Row: HAPPY
+2024-06-04 17:12:52 DEBUG duplicateId:137 - <==      Total: 1
+2024-06-05 09:25:19 DEBUG LogFactory:109 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2024-06-05 09:25:19 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:25:19 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:25:19 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:25:19 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:25:19 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 09:25:19 DEBUG PooledDataSource:448 - Created connection 1924949331.
+2024-06-05 09:25:19 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@72bc6553]
+2024-06-05 09:25:19 DEBUG duplicateId:137 - ==>  Preparing: SELECT ID FROM MEMBERINFO m WHERE ID=?
+2024-06-05 09:25:20 DEBUG duplicateId:137 - ==> Parameters: HAPPY(String)
+2024-06-05 09:25:20 TRACE duplicateId:143 - <==    Columns: ID
+2024-06-05 09:25:20 TRACE duplicateId:143 - <==        Row: HAPPY
+2024-06-05 09:25:20 DEBUG duplicateId:137 - <==      Total: 1
+2024-06-05 09:42:32 DEBUG LogFactory:109 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2024-06-05 09:42:32 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:42:32 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:42:32 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:42:32 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:42:32 INFO  UserDaoImpl:93 - 아이디 중복 체크newUser
+2024-06-05 09:42:32 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 09:42:32 DEBUG PooledDataSource:448 - Created connection 1924949331.
+2024-06-05 09:42:32 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@72bc6553]
+2024-06-05 09:42:32 DEBUG duplicateId:137 - ==>  Preparing: SELECT ID FROM MEMBERINFO m WHERE ID=?
+2024-06-05 09:42:32 DEBUG duplicateId:137 - ==> Parameters: newUser(String)
+2024-06-05 09:42:32 DEBUG duplicateId:137 - <==      Total: 0
+2024-06-05 09:42:32 INFO  UserDaoImpl:53 - 사용자 입력 UserDto(seq=0, id=newUser, password=newUser, name=newUser, address=새로운사용자, phone=금천구, email=000, enable=null, auth=null)
+2024-06-05 09:42:32 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 09:42:32 DEBUG PooledDataSource:448 - Created connection 1628551735.
+2024-06-05 09:42:32 DEBUG insertUser:137 - ==>  Preparing: INSERT INTO MEMBERINFO m (SEQ ,ID ,PASSWORD ,NAME ,ADDRESS ,PHONE ,EMAIL ,ENABLE ,AUTH) VALUES(MEMEBERINFO_SEQ.NEXTVAL, ?,?,?,?,?,?,'Y','USER')
+2024-06-05 09:42:32 DEBUG insertUser:137 - ==> Parameters: newUser(String), newUser(String), newUser(String), 새로운사용자(String), 금천구(String), 000(String)
+2024-06-05 09:42:32 DEBUG insertUser:137 - <==    Updates: 1
+2024-06-05 09:42:32 INFO  UserDaoImpl:61 - 로그인null
+2024-06-05 09:42:32 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 09:42:32 DEBUG PooledDataSource:448 - Created connection 1699578227.
+2024-06-05 09:42:32 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@654d8173]
+2024-06-05 09:42:32 DEBUG getLogin:137 - ==>  Preparing: SELECT SEQ ,ID, NAME ,AUTH FROM MEMBERINFO m WHERE ID=? AND PASSWORD =? AND ENABLE ='Y'
+2024-06-05 09:54:17 DEBUG LogFactory:109 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2024-06-05 09:54:17 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:54:17 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:54:17 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:54:17 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:54:17 INFO  UserDaoImpl:93 - 아이디 중복 체크newUser
+2024-06-05 09:54:17 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 09:54:18 DEBUG PooledDataSource:448 - Created connection 1924949331.
+2024-06-05 09:54:18 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@72bc6553]
+2024-06-05 09:54:18 DEBUG duplicateId:137 - ==>  Preparing: SELECT ID FROM MEMBERINFO m WHERE ID=?
+2024-06-05 09:54:18 DEBUG duplicateId:137 - ==> Parameters: newUser(String)
+2024-06-05 09:54:18 TRACE duplicateId:143 - <==    Columns: ID
+2024-06-05 09:54:18 TRACE duplicateId:143 - <==        Row: newUser
+2024-06-05 09:54:18 DEBUG duplicateId:137 - <==      Total: 1
+2024-06-05 09:55:38 DEBUG LogFactory:109 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2024-06-05 09:55:38 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:55:38 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:55:38 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:55:38 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:55:38 INFO  UserDaoImpl:93 - 아이디 중복 체크newUser
+2024-06-05 09:55:38 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 09:55:39 DEBUG PooledDataSource:448 - Created connection 1924949331.
+2024-06-05 09:55:39 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@72bc6553]
+2024-06-05 09:55:39 DEBUG duplicateId:137 - ==>  Preparing: SELECT ID FROM MEMBERINFO m WHERE ID=?
+2024-06-05 09:55:39 DEBUG duplicateId:137 - ==> Parameters: newUser(String)
+2024-06-05 09:55:39 TRACE duplicateId:143 - <==    Columns: ID
+2024-06-05 09:55:39 TRACE duplicateId:143 - <==        Row: newUser
+2024-06-05 09:55:39 DEBUG duplicateId:137 - <==      Total: 1
+2024-06-05 09:56:08 DEBUG LogFactory:109 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2024-06-05 09:56:08 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:56:08 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:56:08 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:56:08 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:56:08 INFO  UserDaoImpl:93 - 아이디 중복 체크newUser
+2024-06-05 09:56:08 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 09:56:08 DEBUG PooledDataSource:448 - Created connection 1924949331.
+2024-06-05 09:56:08 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@72bc6553]
+2024-06-05 09:56:08 DEBUG duplicateId:137 - ==>  Preparing: SELECT ID FROM MEMBERINFO m WHERE ID=?
+2024-06-05 09:56:09 DEBUG duplicateId:137 - ==> Parameters: newUser(String)
+2024-06-05 09:56:09 TRACE duplicateId:143 - <==    Columns: ID
+2024-06-05 09:56:09 TRACE duplicateId:143 - <==        Row: newUser
+2024-06-05 09:56:09 DEBUG duplicateId:137 - <==      Total: 1
+2024-06-05 09:56:09 INFO  UserDaoImpl:53 - 사용자 입력 UserDto(seq=0, id=newUser, password=newUser, name=newUser, address=새로운사용자, phone=금천구, email=000, enable=null, auth=null)
+2024-06-05 09:56:09 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 09:56:09 DEBUG PooledDataSource:448 - Created connection 353023213.
+2024-06-05 09:56:09 DEBUG insertUser:137 - ==>  Preparing: INSERT INTO MEMBERINFO m (SEQ ,ID ,PASSWORD ,NAME ,ADDRESS ,PHONE ,EMAIL ,ENABLE ,AUTH) VALUES(MEMEBERINFO_SEQ.NEXTVAL, ?,?,?,?,?,?,'Y','USER')
+2024-06-05 09:56:09 DEBUG insertUser:137 - ==> Parameters: newUser(String), newUser(String), newUser(String), 새로운사용자(String), 금천구(String), 000(String)
+2024-06-05 09:56:19 DEBUG LogFactory:109 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2024-06-05 09:56:19 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:56:19 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:56:19 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:56:19 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 09:56:19 INFO  UserDaoImpl:93 - 아이디 중복 체크newUser
+2024-06-05 09:56:19 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 09:56:19 DEBUG PooledDataSource:448 - Created connection 1924949331.
+2024-06-05 09:56:19 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@72bc6553]
+2024-06-05 09:56:19 DEBUG duplicateId:137 - ==>  Preparing: SELECT ID FROM MEMBERINFO m WHERE ID=?
+2024-06-05 09:56:19 DEBUG duplicateId:137 - ==> Parameters: newUser(String)
+2024-06-05 09:56:19 TRACE duplicateId:143 - <==    Columns: ID
+2024-06-05 09:56:19 TRACE duplicateId:143 - <==        Row: newUser
+2024-06-05 09:56:19 DEBUG duplicateId:137 - <==      Total: 1
+2024-06-05 10:01:56 DEBUG LogFactory:109 - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2024-06-05 10:01:56 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 10:01:56 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 10:01:56 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 10:01:56 DEBUG PooledDataSource:373 - PooledDataSource forcefully closed/removed all connections.
+2024-06-05 10:01:56 INFO  UserDaoImpl:93 - 아이디 중복 체크newUser1
+2024-06-05 10:01:57 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 10:01:57 DEBUG PooledDataSource:448 - Created connection 1924949331.
+2024-06-05 10:01:57 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@72bc6553]
+2024-06-05 10:01:57 DEBUG duplicateId:137 - ==>  Preparing: SELECT ID FROM MEMBERINFO m WHERE ID=?
+2024-06-05 10:01:57 DEBUG duplicateId:137 - ==> Parameters: newUser1(String)
+2024-06-05 10:01:57 DEBUG duplicateId:137 - <==      Total: 0
+2024-06-05 10:01:57 INFO  UserDaoImpl:53 - 사용자 입력 UserDto(seq=0, id=newUser1, password=newUser, name=newUser, address=새로운사용자, phone=금천구, email=000, enable=null, auth=null)
+2024-06-05 10:01:57 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 10:01:57 DEBUG PooledDataSource:448 - Created connection 1193398802.
+2024-06-05 10:01:57 DEBUG insertUser:137 - ==>  Preparing: INSERT INTO MEMBERINFO m (SEQ ,ID ,PASSWORD ,NAME ,ADDRESS ,PHONE ,EMAIL ,ENABLE ,AUTH) VALUES(MEMEBERINFO_SEQ.NEXTVAL, ?,?,?,?,?,?,'Y','USER')
+2024-06-05 10:01:57 DEBUG insertUser:137 - ==> Parameters: newUser1(String), newUser(String), newUser(String), 새로운사용자(String), 금천구(String), 000(String)
+2024-06-05 10:01:57 DEBUG insertUser:137 - <==    Updates: 1
+2024-06-05 10:01:57 INFO  UserDaoImpl:61 - 로그인{pw=newUser, id=newUser1}
+2024-06-05 10:01:57 DEBUG JdbcTransaction:143 - Opening JDBC Connection
+2024-06-05 10:01:57 DEBUG PooledDataSource:448 - Created connection 1637613097.
+2024-06-05 10:01:57 DEBUG JdbcTransaction:107 - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@619bfe29]
+2024-06-05 10:01:57 DEBUG getLogin:137 - ==>  Preparing: SELECT SEQ ,ID, NAME ,AUTH FROM MEMBERINFO m WHERE ID=? AND PASSWORD =? AND ENABLE ='Y'
+2024-06-05 10:01:57 DEBUG getLogin:137 - ==> Parameters: newUser1(String), newUser(String)
+2024-06-05 10:01:57 TRACE getLogin:143 - <==    Columns: SEQ, ID, NAME, AUTH
+2024-06-05 10:01:57 TRACE getLogin:143 - <==        Row: 24, newUser1, newUser, USER
+2024-06-05 10:01:57 DEBUG getLogin:137 - <==      Total: 1
