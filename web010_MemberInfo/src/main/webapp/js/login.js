@@ -3,9 +3,23 @@
  */
 window.onload = function() {
 	document.querySelector("input[type=submit]").onclick = function(event) {
-		event.preventDefault();
-		return false;
+		//		event.preventDefault();
+		//		return false;
+
+		var emailIsCheck = emailCheck();
+		var idIsCheck = document.getElementsByName("id")[0].title;
+		console.log(emailIsCheck, idIsCheck);
+		console.log(typeof emailIsCheck, typeof idIsCheck); //boolean, string
+
+		if (emailIsCheck && idIsCheck == 'y') {
+			document.getElementsByName("id")[0].disabled="";
+			document.forms[0].submit();
+		} else {
+			event.preventDefault();
+			return false;
+		}
 	}
+
 	var inputText = document.querySelectorAll("input[type=text],input[type=password]");
 	console.log(inputText.length);
 	for (let i = 0; i < inputText.length; i++) {
@@ -37,10 +51,11 @@ function idCheck() {
 function emailCheck() {
 	var email = document.getElementsByName("email")[0].value;
 	var regEx = /^[a-zA-Z0-9\.\-]+@[a-zA-Z\-]+\.[A-Za-z]{2,3}$/;
-	
-	if(regEx.test(email)){
+
+	if (regEx.test(email)) {
 		//alert("올바른 형식의 이메일입니다.");
-	}else{
+		return true;
+	} else {
 		alert("잘못된 형식의 이메일입니다.");
 	}
 }

@@ -69,6 +69,38 @@
      	<servlet-name>duplicateId</servlet-name>
      	<url-pattern>/duplicateId.do</url-pattern>
      </servlet-mapping>
+          
+     <!-- 회원상태조회 --> 
+     <servlet>
+     	<servlet-name>userListState</servlet-name>
+     	<servlet-class>com.min.edu.controller.UserListStateServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>userListState</servlet-name>
+     	<url-pattern>/userListState.do</url-pattern>
+     </servlet-mapping>  
+     
+     <!-- 회원정보조회(사용계정) -->   
+     <servlet>
+     	<servlet-name>userListServlet</servlet-name>
+     	<servlet-class>com.min.edu.controller.UserListServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>userListServlet</servlet-name>
+     	<url-pattern>/userListServlet.do</url-pattern>
+     </servlet-mapping> 
+                  
+                  
+     <!-- 권한 수정 -->
+     <servlet>
+     	<servlet-name>authUpdate</servlet-name>
+     	<servlet-class>com.min.edu.controller.AuthUpdateServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>authUpdate</servlet-name>
+     	<url-pattern>/authUpdate.do</url-pattern>
+     </servlet-mapping> 
+     
                   
      <!-- filter 클래스 작성 -->
      <filter>

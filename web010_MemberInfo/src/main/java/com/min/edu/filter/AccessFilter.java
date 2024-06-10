@@ -46,6 +46,8 @@ public class AccessFilter extends HttpFilter implements Filter {
 				chain.doFilter(req, res);
 			}
 		} else {
+			req.setCharacterEncoding("UTF-8");
+			//필터에 걸어주면 모두 다 걸림
 			chain.doFilter(req, res);
 		}
 
